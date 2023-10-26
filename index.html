@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Noto+Sans+JP:wght@400;500;600;700;900&family=Oswald:wght@200;300&family=Pixelify+Sans:wght@400;500;600;700&family=Playpen+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<!--?----------------------- style -----------------!-->
+        <link href="style.css" rel="stylesheet">
+
+<!--!----------------- font and icon -----------------!-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+
+    
+    <body>
+        
+        <div id="mainContainer" class="hero_header" >
+            <div class="wrapper">
+<!--todo-------------------------- HEADER --------------------------todo-->
+                <header>
+                    <img src="Matilak.png" >
+                    <div class="logo">
+                       
+                        <!-- <i class="fa-solid fa-a"></i> -->
+                        <!-- <div class="logo_text">matilak</div> -->
+                    </div>
+                    <nav>
+                        <!-- <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlink">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">status</a></li>
+                            <li><a href="#">Favorites</a></li>
+                            <li><a href="#">hobbies</a></li>
+                        </ul> -->
+                    </nav>
+<!--!---------------------------- Dark mode button ----------------------------!-->
+                <div class="DMB">
+                    <label  class="theme-switch">
+                        <input onclick="toggleDarkMode();flipCard() "
+                        type="checkbox" class="theme-switch__checkbox" >
+                        <div class="theme-switch__container">
+                          <div class="theme-switch__clouds"></div>
+                          <div class="theme-switch__stars-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="theme-switch__circle-container">
+                            <div class="theme-switch__sun-moon-container">
+                              <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </label>  
+                    </div>
+                </header>
+
+<!--todo-------------------- MAIN BODY --------------------todo-->
+
+                <div class="container">
+                    <div class="hero_pic">
+                        <!-- <img src="dp.jpg" alt=""> -->
+
+                        <div class="flip-card" >
+                            <div class="flip-card-inner">
+                                
+                              <div class="flip-card-front">
+                                <!-- <h1>Click to Flip</h1> -->
+                              </div>
+                              
+                              <div class="flip-card-back">
+                                <!-- <h1>Flipped!</h1> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="hero_text">
+                            <h5>I'm <span class="inp"> Inlove with alexis</span></h5>
+                            <h1>Caleb Steven A Lagunilla</h1>
+                            
+                            <p>
+                                ROTC Officer & 2nd-year BSIT student at Tarlac 
+                                Agricultural University.Passionate about programming & gaming, 
+                                adept at crafting algorithms & software, aiming for excellence 
+                                in IT & gaming.
+                            </p>
+                            <h4>"Victory Belongs to Those Who Endure."</h4>
+                            <div class="mo">
+                                <div class="mo1">
+                                    <div class="btn_group">
+                                        <!-- <a href="#" class="btn active">About</a>
+                                        <a href="#" class="btn">Sorry</a> -->
+                                        <div class="none">
+                                            <button class="btn" type="button" onclick="openFavPopUp()">
+                                                <strong>More</strong>
+                                                <div id="container-stars">
+                                                <div id="stars"></div>
+                                                </div>
+                                            
+                                                <div id="glow">
+                                                <div class="circle"></div>
+                                                <div class="circle"></div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                
+                                <h1 id="current-time"></h1>
+                            </div>
+                                <div class="qwe">
+                                    <div class="social">
+                                        
+
+                                        <div class="card">
+                                            <div class="background">
+                                            </div>
+                                            <div class="logo">
+                                            Socials
+                                        </div>
+                                        
+                                            <a href="https://www.instagram.com/steven_lagunilla/"><div class="box box1"><span class="icon"><svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                                <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                                                </svg></span></div></a>
+                                        
+                                            <a href="https://www.facebook.com/mekillingyou.zoro"><div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                                
+                                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                                                
+                                                </svg></span></div></a>
+                                        
+                                            <a href="https://github.com/zmonya"><div class="box box3"><span class="icon"><svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+                                                
+                                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                
+                                                </svg></span></div></a>
+                                        
+                                        <div class="box box4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="popUp" id="popUp-fav">
+            <div>
+                
+                    
+                            <button class="btn" type="button" onclick="closeFavPopUp()">
+                                <strong>More</strong>
+                                <div id="container-stars">
+                                <div id="stars"></div>
+                                </div>
+                            
+                                <div id="glow">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                </div>
+                            </button>
+                        
+                      
+                    
+                
+            </div>
+
+            
+        </div>
+ -->
+
+
+
+    </body>
+    
+        <script>
+        
+        function openFavPopUp() {
+            const popUpFav = document.getElementById("popUp-fav");
+            popUpFav.classList.add("open-popUp");
+        }
+
+        function closeFavPopUp() {
+            const popUpFav = document.getElementById("popUp-fav");
+            popUpFav.classList.remove("open-popUp");
+        }
+        </script>
+
+
+
+
+<!--!-------------------- Text Loop --------------------!-->
+    <Script>
+     
+        var typed = new Typed(".inp", {
+            strings: [" ","ROTC officer","BSIT Student"],
+            typeSpeed: 50,
+            backSpeed:70,
+            loop:true
+            });
+    </Script>
+<!--!-------------------- TIME --------------------!-->
+<script>
+    let time = document.getElementById("current-time");
+  
+    setInterval(() => {
+      let d = new Date();
+      let hours = d.getHours();
+      let minutes = d.getMinutes();
+      let seconds = d.getSeconds();
+      let amOrPm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12 || 12;
+      time.innerHTML = hours + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds) + " " + amOrPm;
+    }, 1000);
+  </script>
+
+<!--!-------------------- Dark mode --------------------!-->
+<script>
+  function toggleDarkMode() {
+            var element = document.getElementById('mainContainer');
+            element.classList.toggle("dark-mode");
+        }
+</script>
+
+
+<!--!-------------------- Flip Card --------------------!-->
+    <script>
+        function flipCard() {
+            var element = document.querySelector('.flip-card-inner');
+            element.style.transform = element.style.transform === 'rotateY(180deg)' ? 'rotateY(0)' : 'rotateY(180deg)';
+        }
+    </script>
+
+
+</html>
+
